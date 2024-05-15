@@ -1,0 +1,28 @@
+body {
+    background-image: url("../img/background.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+}
+
+.center-my-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.white-text {
+    color: white;
+}
+
+.font {
+    font-family: Tahoma;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.hanoi-gif {
+    width: 500px;
+    height: auto !important;
+    margin-top: 100px;
+}

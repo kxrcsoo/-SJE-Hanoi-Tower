@@ -1,0 +1,51 @@
+body {
+    background-image: url("../img/background.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+}
+
+.main-svg{
+    background-color: #fff;
+    border: 10px solid black;
+}
+
+.center-my-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.white-text {
+    color: white;
+}
+
+.font {
+    font-family: Tahoma;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.pole {
+    stroke: black;
+    stroke-width: 15;
+}
+
+.pole-bottom {
+    stroke: #696969;
+    stroke-width: 40;
+    border-radius: 10%;
+}
+
+.disk {
+    stroke: black;
+    stroke-width: 30;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: #7cc576;
+}
+
+.pole-clickpos {
+    color: #000;
+    opacity: 0%;
+}

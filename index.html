@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tower of Hanoi</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container center-my-div">
+        <div class="col-md-12 text-center white-text">
+            <h1 class="text-center white-text font">The Tower of Hanoi - Szabályok</h1>
+            <hr>
+            <h3 class="text-center white-text font">Válassz nehézséget!</h3>
+            <br><br>
+            <button class="btn btn-success btn-lg" id="btn-easy" onclick="startTheGame(1);">Könnyű</button>
+            <button class="btn btn-warning btn-lg" id="btn-normal" onclick="startTheGame(2);">Normál</button>
+            <button class="btn btn-danger btn-lg" id="btn-hard" onclick="startTheGame(3)";>Nehéz</button>
+            <br>
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6WiIAX2aH9XgJ_74W_FAK6EK_LYw92nhoC4ZdVWXLrZmzjIdRqBGH-4MiOAZwjt9OjcpcM2WwsHjXfLB8DMXF-r6r5ilq2_W5jZJpnzfgnDwTg9tzCMF9StKquo1qc2X7Oq-OJCX0ICU/s1600/hanoi_n4.gif" alt="Hanoi" class="hanoi-gif">
+            <br><br><br><br>
+            <span id="desc" class="text-center white-text font"></span>
+            <br><br><br><br>
+            <button class="btn btn-secondary" onclick="showRules()">Segítség</button>
+        </div>
+    </div>
+    
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/jquery.js"></script>
+</body>
+</html>

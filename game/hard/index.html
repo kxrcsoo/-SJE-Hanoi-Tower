@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tower of Hanoi</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class="container center-my-div">
+        <div class="col-md-12">
+            <h1 class="text-center white-text font">The Tower of Hanoi</h1>
+            <hr>
+            <h5 id="moves" class="text-center white-text font">Lépések száma: 0</h5>
+            <div id="game">
+                <svg width="1280" height="720" class="main-svg">
+                    <line x1="250" y1="200" x2="250" y2="650" class="pole" id="pole-1"></line>
+                    <line x1="625" y1="200" x2="625" y2="650" class="pole" id="pole-2"></line>
+                    <line x1="1000" y1="200" x2="1000" y2="650" class="pole" id="pole-3"></line>
+                    <line x1="200" y1="650" x2="300" y2="650" class="pole-bottom"></line>
+                    <line x1="575" y1="650" x2="675" y2="650" class="pole-bottom"></line>
+                    <line x1="950" y1="650" x2="1050" y2="650" class="pole-bottom"></line>
+
+                    <!-- DRAW THE DISKS -->
+
+                    <line x1="100" y1="615" x2="400" y2="615" class="disk" id="disk-1"></line>
+                    <line x1="120" y1="585" x2="380" y2="585" class="disk" id="disk-2"></line>
+                    <line x1="140" y1="555" x2="360" y2="555" class="disk" id="disk-3"></line>
+                    <line x1="160" y1="525" x2="340" y2="525" class="disk" id="disk-4"></line>
+                    <line x1="180" y1="495" x2="320" y2="495" class="disk" id="disk-5"></line>
+                    <line x1="200" y1="465" x2="300" y2="465" class="disk" id="disk-6"></line>
+                    <line x1="220" y1="435" x2="280" y2="435" class="disk" id="disk-7"></line>
+                    <line x1="240" y1="405" x2="260" y2="405" class="disk" id="disk-8"></line>
+
+                    <rect x="50" y="100" width="400" height="720" class="pole-clickpos" id="pole-clickpos-1" onclick="clickPole(1)"></rect>
+                    <rect x="450" y="100" width="400" height="720" class="pole-clickpos" id="pole-clickpos-2" onclick="clickPole(2)"></rect>
+                    <rect x="850" y="100" width="400" height="720" class="pole-clickpos" id="pole-clickpos-3" onclick="clickPole(3)"></rect>
+
+
+                </svg>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="container center-my-div">
+        <div class="col-md-5">
+            <button type="button" class="btn btn-warning" id="helpButton" onclick="showHelp()">Segítség</button>
+            <button type="button" class="btn btn-info" id="resetButton" onclick="restartTheGame()">Új játék</button>
+            <button type="button" class="btn btn-success" id="newColor" onclick="setDiskColor()">Új színek</button>
+            <button type="button" class="btn btn-secondary" id="mainMenu" onclick="mainMenu()">Vissza a menübe</button>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
