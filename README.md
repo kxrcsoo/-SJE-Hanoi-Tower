@@ -1,8 +1,8 @@
 # The Tower of Hanoi
 ---
-This game was made for a school project in the following languages:
+Ez a játék egy egyetemi beadandó, ami a következő nyelveket használja:
  - JavaScript ( JQuery )
  - HTML
  - CSS ( Bootstrap 5 )
 
-Feel free to use this project for inspiration, learning, etc.
+A projekt szabadon felhasználható inspiráció, fejlődés és egyéb célokra.
